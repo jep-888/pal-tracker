@@ -16,3 +16,11 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+bootRun.environment([
+        "WELCOME_MESSAGE": "howdy",
+])
+
+test.environment([
+        "WELCOME_MESSAGE": "Hello from test",
+])
